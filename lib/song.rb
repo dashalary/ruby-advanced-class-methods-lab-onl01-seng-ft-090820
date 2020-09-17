@@ -48,6 +48,7 @@ file_array.reject {|item| item == "mp3"}
 artist_name = file_array[0] 
 song.artist_name = artist_name
 name = file_array[1] 
+name[0] = ""
 song.name = name
 song 
 end
