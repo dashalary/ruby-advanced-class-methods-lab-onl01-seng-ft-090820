@@ -45,11 +45,11 @@ def self.new_from_filename(filename)
 song = self.new
 file_array = filename.split(/[-.]/)
 file_array.reject {|item| item == "mp3"}
+file_array.delete("  ")
 artist_name = file_array[0] 
-artist_name.delete_suffix(" ")
 song.artist_name = artist_name
 name = file_array[1] 
-name[0] = ""
+# name[0] = ""
 song.name = name
 song 
 end
