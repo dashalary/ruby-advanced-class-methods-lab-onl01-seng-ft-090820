@@ -42,7 +42,14 @@ def self.alphabetical
 end
 
 def self.new_from_filename
-  song.artist_name = artist_name
+ song = self.new
+    file_array = filename.split(/[-.]/)
+    file_array.reject {|item| item == "mp3"}
+    artist_name = file_array[0] 
+    song.artist_name = artist_name
+    name = file_array[1] 
+    song.name = name
+    song 
   
   
   
