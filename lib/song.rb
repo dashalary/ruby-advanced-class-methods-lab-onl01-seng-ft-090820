@@ -42,6 +42,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename
+  song.artist_name = artist_name
   
   
   
