@@ -41,4 +41,9 @@ def self.alphabetical
 @@all.sort_by { |a| a }
 end
 
+def self.new_from_filename
+  
+  
+  
+end
 end
