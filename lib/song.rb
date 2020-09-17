@@ -38,7 +38,7 @@ self.find_by_name(name) || self.create_by_name(name)
 end
 
 def self.alphabetical
-return self.all.sort_by { |a, b| a <=> b }
+self.all.sort_by { |a, b| a <=> b }
 end
 
 end
