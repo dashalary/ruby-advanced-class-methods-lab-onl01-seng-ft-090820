@@ -41,7 +41,7 @@ def self.alphabetical
 @@all.sort_by { |a| a.name }
 end
 
-def self.new_from_filename
+def self.new_from_filename(filename)
  song = self.new
     file_array = filename.split(/[-.]/)
     file_array.reject {|item| item == "mp3"}
