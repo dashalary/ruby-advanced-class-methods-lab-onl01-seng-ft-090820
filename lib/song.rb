@@ -34,13 +34,7 @@ def self.find_by_name(name)
 end
 
 def self.find_or_create_by_name(name)
-  #     if @@all.include?(name) == false
-  #   self.create_by_name(name)
-  # else 
-  #   self.find_by_name(name)
-  # end
 self.find_by_name(name) || self.create_by_name(name)
-
 end
 
 
