@@ -39,6 +39,7 @@ end
 
 def self.alphabetical
 # @@all.sort_by { |a| a }
+@@all.sort
 end
 
 def self.new_from_filename
