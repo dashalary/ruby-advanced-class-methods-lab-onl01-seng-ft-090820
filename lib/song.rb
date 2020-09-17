@@ -39,7 +39,7 @@ end
 
 def self.alphabetical
 @@all.sort_by { |song.name| song.name }
-end
+
 end
 
 def self.new_from_filename
